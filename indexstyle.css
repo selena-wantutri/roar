@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+    background-color: rgb(30, 147, 57);
+    color:rgb(255, 255, 255);
+    padding: 10px 20px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+}
+
+.navbar li a{
+    color: white
+    text-decoration none;
+    padding: 10px;
+
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    background: white;
+    color:rgb(0, 0, 0)
+    border-radius 5px;
+
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+
+}
+
+section .section-content h1{
+    color:black;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+section .section-content h2{
+    color: black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+section img{
+    height: 600px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer {
+    background-color: whitesmoke;
+    color:black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-row{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 5px 0;
+}
+
+.footer-col ul li a{
+    text-decoration: none;
+    color: #7383ff;
+}
+
+.footer-col ul li a:hover{
+    color: white;
+}
+
+.footer-col input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.footer-col button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color:black;
+    cursor: pointer;
+}
+
+.footer-col button:hover{
+    background: #ccc;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:che {
+    display: none;
+}
+
+@media (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+}
